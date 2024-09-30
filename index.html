@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Oleh-Oleh Lokal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3c6e71;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #333;
+        }
+        .product button {
+            background-color: #3c6e71;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .cart h2 {
+            background-color: #353535;
+            color: white;
+            padding: 10px;
+        }
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+        .cart-items li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-items li span {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toko Oleh-Oleh Khas Lokal</h1>
+        <p>Temukan oleh-oleh terbaik dari daerah setempat!</p>
+    </header>
+
+    <div class="container">
+        <h2>Produk Kami</h2>
+
+        <div class="product">
+            <img src="produk1.jpg" alt="Produk 1">
+            <h3>Dodol Garut</h3>
+            <p>Harga: Rp. 25,000</p>
+            <button onclick="addToCart('Dodol Garut', 25000)">Tambahkan ke Keranjang</button>
+        </div>
+
+        <div class="product">
+            <img src="produk2.jpg" alt="Produk 2">
+            <h3>Pisang Sale</h3>
+            <p>Harga: Rp. 15,000</p>
+            <button onclick="addToCart('Pisang Sale', 15000)">Tambahkan ke Keranjang</button>
+        </div>
+
+        <div class="product">
+            <img src="produk3.jpg" alt="Produk 3">
+            <h3>Keripik Tempe</h3>
+            <p>Harga: Rp. 10,000</p>
+            <button onclick="addToCart('Keripik Tempe', 10000)">Tambahkan ke Keranjang</button>
+        </div>
+
+        <div class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul class="cart-items" id="cart-items"></ul>
+            <p><strong>Total Harga: Rp. <span id="total-price">0</span></strong></p>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        let totalPrice = 0;
+
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            totalPrice += productPrice;
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElem = document.getElementById('total-price');
+
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `${item.name} <span>Rp. ${item.price}</span>`;
+                cartItems.appendChild(li);
+            });
+
+            totalPriceElem.innerText = totalPrice;
+        }
+    </script>
+
+</body>
+</html>
