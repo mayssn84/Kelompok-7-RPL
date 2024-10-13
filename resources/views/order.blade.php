@@ -6,16 +6,16 @@
     <title>Pemesanan Produk Lokal oleh-oleh</title>
     <style>
         body {
-            font-family: Georgia, serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #cccccc6b;
         }
         .container {
             max-width: 500px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #62a1db;
+            padding: 40px;
+            background-color: #8cb3d9;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
@@ -26,7 +26,7 @@
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #62a1db;
-            border-radius: 5px;
+            border-radius: 20px;
         }
         button {
             width: 100%;
@@ -55,10 +55,12 @@
 
         <label for="product">Pilih Produk:</label>
         <select id="product" name="product">
-            <option value="Kacang Mente">Kacang Mente</option>
-            <option value="Abon Ikan Marni">Abon</option>
-            <option value="kain tenun khas kendari">kain tenun khas kendari</option>
-            <option value="Gula Ni'i">Gula Ni'</option>
+            <option value="Kacang Mete">Kacang Mete</option>
+            <option value="Abon Ikan Marlin">Abon Ikan Marlin</option>
+            <option value="kain Tenun Khas Kendari">kain Tenun Khas Kendari</option>
+            <option value="Bagea">Bagea</option>
+            <option value="Brownies Mete">Brownies Mete</option>
+            <option value="Souvenir Khas Kendari">Souvenir Khas Kendari</option>
         </select>
 
         <label for="quantity">Jumlah Produk:</label>
@@ -79,13 +81,13 @@
         const quantity = document.getElementById('quantity').value;
 
         // Format pesan untuk WhatsApp
-        const message = Halo, saya ingin memesan:%0aNama: ${name}%0aAlamat: ${address}%0aProduk: ${product}%0aJumlah: ${quantity};
+        const message = `Halo, saya ingin memesan:%0aNama: ${name}%0aAlamat: ${address}%0aProduk: ${product}%0aJumlah: ${quantity}`;
 
         // Nomor WhatsApp tujuan (sesuaikan dengan nomor toko oleh-oleh)
         const phoneNumber = "6282191262262";  // Ganti dengan nomor WhatsApp penerima
 
         // Membuka WhatsApp dengan pesan yang telah diformat
-        window.open(https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}, '_blank');
+        window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
     });
 </script>
 
