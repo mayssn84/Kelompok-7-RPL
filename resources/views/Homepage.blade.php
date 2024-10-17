@@ -131,60 +131,66 @@
         <div class="product-grid">
             <!-- Card 1 -->
             <div class="product-card">
-                <img src="images/images.jpg" alt="Kacang Mete">
+                <img src="images/rpl 1.jpg" alt="Kacang Mete">
                 <div class="card-info">
                     <h3>Kacang Mete</h3>
                     <p>Rp. 40,000</p>
+                    <p> stok 25</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>
 
             <!-- Card 2 -->
             <div class="product-card">
-                <img src="images/download (4).jpg" alt="Abon Ikan Marlin">
+                <img src="images/rpl 2.jpg" alt="Abon Ikan Marlin">
                 <div class="card-info">
                     <h3>Abon Ikan Marlin</h3>
                     <p>Rp. 30,000</p>
+                    <p>stok 20</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>
 
             <!-- Card 3 -->
             <div class="product-card">
-                <img src="images/420627_aa672c07-e0e1-4f7d-8377-cf3ddc2c1972.jpg" alt="Kain Tenun Khas Kendari">
+                <img src="images/rpl 5.jpg" alt="Kain Tenun Khas Kendari">
                 <div class="card-info">
                     <h3>Kain Tenun Khas Kendari</h3>
                     <p>Rp. 70,000</p>
+                    <p>stok 15</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>
 
             <!-- Card 4 -->
             <div class="product-card">
-                <img src="images/download (9).jpg" alt="Bagea">
+                <img src="images/rpl 7.jpg" alt="Bagea">
                 <div class="card-info">
                     <h3>Bagea</h3>
                     <p>Rp. 35,000</p>
+                    <p>stok 50</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>
 
             <!-- Card 5 -->
             <div class="product-card">
-                <img src="images/download (10).jpg" alt="Brownies Mete">
+                <img src="images/rpl 8.jpg" alt="Brownies Mete">
                 <div class="card-info">
                     <h3>Brownies Mete</h3>
                     <p>Rp. 60,000</p>
+                    <p>stok 35</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>
 
             <!-- Card 6 -->
             <div class="product-card">
-                <img src="images/images (1).jpg" alt="Souvenir Khas Kendari">
+                <img src="images/rpl 6.jpg" alt="Souvenir Khas Kendari">
                 <div class="card-info">
                     <h3>Souvenir Khas Kendari</h3>
                     <p>Rp. 20,000</p>
+                    <p>stok 70</p>
                 </div>
                 <button> <a href="/order" class="btn btn-primary">Order Now</a></button>
             </div>

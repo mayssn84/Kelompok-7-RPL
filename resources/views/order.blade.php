@@ -31,14 +31,14 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #27a146;
+            background-color: #a12735;;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #27a146;
+            background-color: #a12735;;
         }
     </style>
 </head>
