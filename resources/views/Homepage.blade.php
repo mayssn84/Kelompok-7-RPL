@@ -59,14 +59,29 @@
         }
 
         /* Product Grid Styling */
+    
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolom */
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
         /* Product Card Styling */
         .product-card {
             background-color: white;
@@ -116,8 +131,8 @@
     <header class="navbar">
         <h1>Oleh-Oleh Store</h1>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">PRODUCT</a>
+            <a href="#"></a>
+            <a href="#"></a>
         </nav>
     </header>
 
@@ -126,6 +141,7 @@
         <p>Belanja produk oleh-oleh khas dengan mudah dan nyaman</p>
 
         <div class="product-grid">
+
             <!-- Card 1 -->
             <div class="product-card">
                 <img src="images/rpl 1.jpg" alt="Kacang Mete">
@@ -202,6 +218,70 @@
                 </div>
                 <a href="/order" class="btn btn-primary">Order Now</a>
             </div>
+
+            <!-- Card 8 -->
+            <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>baju</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+
+             <!-- Card 9 -->
+             <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>Kue</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>Kue</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+
+             <!-- Card 11 -->
+             <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>Kue</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+             <!-- Card 11 -->
+             <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>Kue</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+             <!-- Card 11 -->
+             <div class="product-card">
+                <img src="images/rpl 8.jpg" alt="Kue">
+                <div class="card-info">
+                    <h3>Kue</h3>
+                    <p>Rp. Gratis</p>
+                    <p>stok 56</p>
+                </div>
+                <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
         </div>
     </main>
 
@@ -210,3 +290,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
